@@ -7,6 +7,7 @@ Nur PyTorch als Rechenbibliothek.
 ## Struktur
 - `pom.xml` - Maven, Java 1.8
 - `src/main/java/de/jojo/ai/ChatClient.java` - Konsolen-Chat (Java-Client)
+- `src/main/java/de/jojo/ai/GuiChatClient.java` - JavaFX-Chat-Oberfläche
 - `python/gpt.py` - das Modell (Transformer)
 - `python/train.py` - Training von Grund auf
 - `python/server.py` - lädt `model.pt` und beantwortet Chat-Anfragen
@@ -18,6 +19,9 @@ Nur PyTorch als Rechenbibliothek.
 3. Server starten: `python python/server.py` (oder `start-server.bat`)
 4. Client starten: in Eclipse Rechtsklick auf `ChatClient.java` > Run As > Java Application
    (oder im Terminal `mvn compile exec:java`)
+   Für die grafische Oberfläche: `start-gui-client.bat` (benötigt Maven und JDK 17+,
+   alternativ `mvn -Pgui javafx:run`).
+   Der normale Konsolen-Client bleibt über `start-client.bat` verfügbar.
 
 `start-train.bat` startet in der sichtbaren Konsole einen durchgehenden 14-Tage-Trainingslauf. Vor dem Training erzeugt Ollama mit `qwen2.5:7b` einmalig bis zu 20 kurze Dialogbeispiele und wird danach entladen; Ollama läuft nicht im Chat. `server_all.py` lädt weiterhin das eigene, kleine `model_all.pt`-Modell. Das ist Datendestillation, kein Übertragen von Qwens Gewichten, und macht das eigene Modell nicht so leistungsfähig wie Qwen. Das Training stoppt nicht automatisch bei stagnierendem Validierungsverlust; nur `stop-train.bat`, ein Prozessfehler oder das Ende der 14 Tage beendet den Lauf. Bei einem Prozessfehler versucht der Wächter den gespeicherten Stand erneut zu starten. Der Rechner muss eingeschaltet und am Strom bleiben.
 

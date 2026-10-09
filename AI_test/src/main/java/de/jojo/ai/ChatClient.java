@@ -16,7 +16,7 @@ import java.util.UUID;
  */
 public class ChatClient {
 
-    private static final String SERVER_URL = "http://localhost:8080/chat";
+    static final String SERVER_URL = "http://localhost:8080/chat";
 
     public static void main(String[] args) {
         String sessionId = UUID.randomUUID().toString();
@@ -40,7 +40,7 @@ public class ChatClient {
         System.out.println("Tschüss!");
     }
 
-    private static String send(String message, String sessionId) throws IOException {
+    static String send(String message, String sessionId) throws IOException {
         HttpURLConnection con = (HttpURLConnection) new URL(SERVER_URL).openConnection();
         con.setRequestMethod("POST");
         con.setConnectTimeout(10_000);
