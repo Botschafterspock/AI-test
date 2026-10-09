@@ -187,5 +187,14 @@
 }
 
 .message-input .content {
-    -fx-background-color: transparent;
+    -fx-background-color: #1a1f2b;
+}
+
+.message-input .text {
+    -fx-fill: #eef0f6;
+}
+
+.message-input .scroll-pane,
+.message-input .scroll-pane > .viewport {
+    -fx-background-color: #1a1f2b;
 }

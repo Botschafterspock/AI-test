@@ -10,7 +10,7 @@ Was es macht:
   3. Trainiert ein Modell (arbeitet mit Bytes, kann also jedes Zeichen).
   4. Speichert:  model_all.pt (bestes Modell)  und  model_all_last.pt (zum Weitertrainieren).
 
-Danach:  py server_all.py
+Danach:  py server_smart.py
 Nutze nur Code, den du selbst geschrieben hast oder verwenden darfst (Lizenzen!).
 """
 import hashlib
@@ -247,4 +247,4 @@ except KeyboardInterrupt:
     log("Abgebrochen mit Strg+C. Speichere letzten Stand ...")
     save(LAST_PATH)
 
-log(f"Fertig. Bestes Modell: {BEST_PATH} (val {best_val:.3f}). Jetzt: py server_all.py")
+log(f"Fertig. Bestes Modell: {BEST_PATH} (val {best_val:.3f}). Jetzt: py server_smart.py")

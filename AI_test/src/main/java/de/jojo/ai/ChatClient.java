@@ -12,7 +12,7 @@ import java.util.UUID;
 
 /**
  * Konsolen-Client für deine eigene AI (Java 8 kompatibel, keine Bibliotheken).
- * Spricht mit python/server.py.
+ * Spricht über POST /chat mit python/server_smart.py oder einem kompatiblen Server.
  */
 public class ChatClient {
 
