@@ -1,0 +1,123 @@
+﻿2026-10-03 21:56:54 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 21:56:54 Erzeuge einmalig neue AntwortentwÃ¼rfe; danach bleiben die Trainingsdaten fÃ¼r faire Vergleiche unverÃ¤ndert.
+2026-10-03 21:56:58 Datengenerator beendet (Exitcode 0).
+2026-10-03 21:56:58 Trainingszyklus 1 startet (Seed 1623102466, maximal 12 Stunden).
+2026-10-03 21:58:02 Trainingszyklus 1 beendet (Exitcode 0).
+2026-10-03 21:58:02 Trainingszyklus 2 startet (Seed 1365597032, maximal 12 Stunden).
+2026-10-03 21:59:01 Trainingszyklus 2 beendet (Exitcode 0).
+2026-10-03 21:59:01 Trainingszyklus 3 startet (Seed 1343339903, maximal 12 Stunden).
+2026-10-03 21:59:59 Trainingszyklus 3 beendet (Exitcode 0).
+2026-10-03 21:59:59 Trainingszyklus 4 startet (Seed 1677299564, maximal 12 Stunden).
+2026-10-03 22:00:55 Trainingszyklus 4 beendet (Exitcode 0).
+2026-10-03 22:00:55 Trainingszyklus 5 startet (Seed 1833787650, maximal 12 Stunden).
+2026-10-03 22:01:53 Trainingszyklus 5 beendet (Exitcode 0).
+2026-10-03 22:01:53 Trainingszyklus 6 startet (Seed 662031003, maximal 12 Stunden).
+2026-10-03 22:02:50 Trainingszyklus 6 beendet (Exitcode 0).
+2026-10-03 22:02:50 Trainingszyklus 7 startet (Seed 1920132465, maximal 12 Stunden).
+2026-10-03 22:03:47 Trainingszyklus 7 beendet (Exitcode 0).
+2026-10-03 22:03:47 Trainingszyklus 8 startet (Seed 1608450464, maximal 12 Stunden).
+2026-10-03 22:06:22 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 22:06:22 Erzeuge einmalig neue AntwortentwÃ¼rfe; danach bleiben die Trainingsdaten fÃ¼r faire Vergleiche unverÃ¤ndert.
+2026-10-03 22:06:25 Datengenerator beendet (Exitcode 0).
+2026-10-03 22:06:25 Trainingszyklus 1 startet (Seed 533992450, maximal 12 Stunden).
+2026-10-03 22:07:08 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 22:07:08 Erzeuge einmalig neue AntwortentwÃ¼rfe; danach bleiben die Trainingsdaten fÃ¼r faire Vergleiche unverÃ¤ndert.
+2026-10-03 22:07:11 Datengenerator beendet (Exitcode 0).
+2026-10-03 22:07:11 Trainingszyklus 1 startet (Seed 336531198, maximal 12 Stunden).
+2026-10-03 22:08:03 Trainingszyklus 1 beendet (Exitcode 0).
+2026-10-03 22:08:03 Trainingszyklus 2 startet (Seed 14813446, maximal 12 Stunden).
+2026-10-03 22:08:54 Trainingszyklus 2 beendet (Exitcode 0).
+2026-10-03 22:08:54 Trainingszyklus 3 startet (Seed 776183912, maximal 12 Stunden).
+2026-10-03 22:09:47 Trainingszyklus 3 beendet (Exitcode 0).
+2026-10-03 22:09:47 Trainingszyklus 4 startet (Seed 1081111759, maximal 12 Stunden).
+2026-10-03 22:10:42 Trainingszyklus 4 beendet (Exitcode 0).
+2026-10-03 22:10:42 Trainingszyklus 5 startet (Seed 713386971, maximal 12 Stunden).
+2026-10-03 22:11:34 Trainingszyklus 5 beendet (Exitcode 0).
+2026-10-03 22:11:34 Trainingszyklus 6 startet (Seed 575933871, maximal 12 Stunden).
+2026-10-03 22:12:26 Trainingszyklus 6 beendet (Exitcode 0).
+2026-10-03 22:12:26 Trainingszyklus 7 startet (Seed 1724737251, maximal 12 Stunden).
+2026-10-03 22:13:17 Trainingszyklus 7 beendet (Exitcode 0).
+2026-10-03 22:13:17 Trainingszyklus 8 startet (Seed 862077006, maximal 12 Stunden).
+2026-10-03 22:14:09 Trainingszyklus 8 beendet (Exitcode 0).
+2026-10-03 22:14:09 Trainingszyklus 9 startet (Seed 2008917136, maximal 12 Stunden).
+2026-10-03 22:15:01 Trainingszyklus 9 beendet (Exitcode 0).
+2026-10-03 22:15:01 Trainingszyklus 10 startet (Seed 154190670, maximal 12 Stunden).
+2026-10-03 22:15:53 Trainingszyklus 10 beendet (Exitcode 0).
+2026-10-03 22:15:53 Trainingszyklus 11 startet (Seed 2132004777, maximal 12 Stunden).
+2026-10-03 22:16:46 Trainingszyklus 11 beendet (Exitcode 0).
+2026-10-03 22:16:46 Trainingszyklus 12 startet (Seed 1137010591, maximal 12 Stunden).
+2026-10-03 22:17:38 Trainingszyklus 12 beendet (Exitcode 0).
+2026-10-03 22:17:38 Trainingszyklus 13 startet (Seed 1357501062, maximal 12 Stunden).
+2026-10-03 22:18:30 Trainingszyklus 13 beendet (Exitcode 0).
+2026-10-03 22:18:30 Trainingszyklus 14 startet (Seed 1040917418, maximal 12 Stunden).
+2026-10-03 22:19:22 Trainingszyklus 14 beendet (Exitcode 0).
+2026-10-03 22:19:22 Trainingszyklus 15 startet (Seed 1737978471, maximal 12 Stunden).
+2026-10-03 22:20:14 Trainingszyklus 15 beendet (Exitcode 0).
+2026-10-03 22:20:14 Trainingszyklus 16 startet (Seed 725637950, maximal 12 Stunden).
+2026-10-03 22:21:08 Trainingszyklus 16 beendet (Exitcode 0).
+2026-10-03 22:21:08 Trainingszyklus 17 startet (Seed 2010185529, maximal 12 Stunden).
+2026-10-03 22:22:02 Trainingszyklus 17 beendet (Exitcode 0).
+2026-10-03 22:22:02 Trainingszyklus 18 startet (Seed 938806713, maximal 12 Stunden).
+2026-10-03 22:22:57 Trainingszyklus 18 beendet (Exitcode 0).
+2026-10-03 22:22:57 Trainingszyklus 19 startet (Seed 1145477289, maximal 12 Stunden).
+2026-10-03 22:23:51 Trainingszyklus 19 beendet (Exitcode 0).
+2026-10-03 22:23:51 Trainingszyklus 20 startet (Seed 1002517208, maximal 12 Stunden).
+2026-10-03 22:24:46 Trainingszyklus 20 beendet (Exitcode 0).
+2026-10-03 22:24:46 Trainingszyklus 21 startet (Seed 757860087, maximal 12 Stunden).
+2026-10-03 22:25:40 Trainingszyklus 21 beendet (Exitcode 0).
+2026-10-03 22:25:40 Trainingszyklus 22 startet (Seed 75136028, maximal 12 Stunden).
+2026-10-03 22:26:34 Trainingszyklus 22 beendet (Exitcode 0).
+2026-10-03 22:26:34 Trainingszyklus 23 startet (Seed 1351931531, maximal 12 Stunden).
+2026-10-03 22:27:28 Trainingszyklus 23 beendet (Exitcode 0).
+2026-10-03 22:27:28 Trainingszyklus 24 startet (Seed 1732532148, maximal 12 Stunden).
+2026-10-03 22:28:22 Trainingszyklus 24 beendet (Exitcode 0).
+2026-10-03 22:28:22 Trainingszyklus 25 startet (Seed 1813228972, maximal 12 Stunden).
+2026-10-03 22:29:16 Trainingszyklus 25 beendet (Exitcode 0).
+2026-10-03 22:29:16 Trainingszyklus 26 startet (Seed 636150848, maximal 12 Stunden).
+2026-10-03 22:30:10 Trainingszyklus 26 beendet (Exitcode 0).
+2026-10-03 22:30:10 Trainingszyklus 27 startet (Seed 88555502, maximal 12 Stunden).
+2026-10-03 22:31:04 Trainingszyklus 27 beendet (Exitcode 0).
+2026-10-03 22:31:04 Trainingszyklus 28 startet (Seed 1193446759, maximal 12 Stunden).
+2026-10-03 22:31:58 Trainingszyklus 28 beendet (Exitcode 0).
+2026-10-03 22:31:58 Trainingszyklus 29 startet (Seed 1414561113, maximal 12 Stunden).
+2026-10-03 22:32:53 Trainingszyklus 29 beendet (Exitcode 0).
+2026-10-03 22:32:53 Trainingszyklus 30 startet (Seed 143008518, maximal 12 Stunden).
+2026-10-03 22:33:47 Trainingszyklus 30 beendet (Exitcode 0).
+2026-10-03 22:33:47 Trainingszyklus 31 startet (Seed 1324931635, maximal 12 Stunden).
+2026-10-03 22:34:41 Trainingszyklus 31 beendet (Exitcode 0).
+2026-10-03 22:34:41 Trainingszyklus 32 startet (Seed 810836532, maximal 12 Stunden).
+2026-10-03 22:35:36 Trainingszyklus 32 beendet (Exitcode 0).
+2026-10-03 22:35:36 Trainingszyklus 33 startet (Seed 1809502832, maximal 12 Stunden).
+2026-10-03 22:36:30 Trainingszyklus 33 beendet (Exitcode 0).
+2026-10-03 22:36:30 Trainingszyklus 34 startet (Seed 485044831, maximal 12 Stunden).
+2026-10-03 22:37:24 Trainingszyklus 34 beendet (Exitcode 0).
+2026-10-03 22:37:24 Trainingszyklus 35 startet (Seed 351755302, maximal 12 Stunden).
+2026-10-03 22:38:19 Trainingszyklus 35 beendet (Exitcode 0).
+2026-10-03 22:38:19 Trainingszyklus 36 startet (Seed 1830306226, maximal 12 Stunden).
+2026-10-03 22:39:04 Trainingszyklus 36 beendet (Exitcode 0).
+2026-10-03 22:39:04 Stoppsignal erkannt. Es wird kein weiterer Trainingszyklus gestartet.
+2026-10-03 22:39:04 Der geplante Trainingszeitraum ist beendet.
+2026-10-03 22:45:32 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 22:45:32 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
+2026-10-03 22:46:04 Datengenerator beendet (Exitcode 0).
+2026-10-03 22:46:04 Trainingszyklus 1 startet (Seed 478841886, maximal 12 Stunden).
+2026-10-03 22:47:07 Trainingszyklus 1 beendet (Exitcode 0).
+2026-10-03 22:47:07 Trainingszyklus 2 startet (Seed 919715617, maximal 12 Stunden).
+2026-10-03 22:48:01 Trainingszyklus 2 beendet (Exitcode 0).
+2026-10-03 22:48:01 Kein neues Bestmodell in diesem Zyklus; stoppe statt denselben Checkpoint endlos neu zu trainieren.
+2026-10-03 22:48:01 Der geplante Trainingszeitraum ist beendet.
+2026-10-03 22:50:07 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 22:50:07 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
+2026-10-03 22:50:20 Datengenerator beendet (Exitcode 0).
+2026-10-03 22:50:20 Kontinuierliches Training startet (Seed 1204184430, noch 336 Stunden; kein automatischer Plateau-Abbruch).
+2026-10-03 23:00:37 Trainingsprozess beendet (Exitcode 0).
+2026-10-03 23:00:37 Stoppsignal erkannt. Training wurde manuell beendet.
+2026-10-03 23:00:37 Der geplante Trainingszeitraum ist beendet.
+2026-10-03 23:00:39 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-03 23:00:39 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
+2026-10-03 23:00:39 Datengenerator beendet (Exitcode 0).
+2026-10-03 23:00:39 Kontinuierliches Training startet (Seed 520630126, noch 336 Stunden; kein automatischer Plateau-Abbruch).
+2026-10-09 20:33:54 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-09 20:33:54 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
+2026-10-09 20:33:54 Datengenerator beendet (Exitcode 0).
+2026-10-09 20:33:54 Kontinuierliches Training startet (Seed 356040838, noch 336 Stunden; kein automatischer Plateau-Abbruch).

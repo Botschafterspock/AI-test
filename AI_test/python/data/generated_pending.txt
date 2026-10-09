@@ -1,0 +1,66 @@
+User: Was unterscheidet eine Liste von einem Tupel in Python?
+AI: Ein Plugin erweitert einen Minecraft-Server um neue Funktionen, zum Beispiel neue Befehle.
+
+User: Was ist ein Generator in Python?
+AI: Ein Mod verändert oder erweitert das Spiel, zum Beispiel mit neuen Blöcken oder Items.
+
+User: Wofür verwendet man ein Enum in Java?
+AI: Java ist eine Programmiersprache. Minecraft und viele Plugins sind damit geschrieben.
+
+User: Was ist ein Permission-Knoten bei einem Server-Plugin?
+AI: Ein Plugin erweitert einen Minecraft-Server um neue Funktionen, zum Beispiel neue Befehle.
+
+User: Was macht die Java Virtual Machine?
+AI: Java ist eine Programmiersprache. Minecraft und viele Plugins sind damit geschrieben.
+
+User: Wie sortiere ich eine Liste mit einer eigenen Regel in Python?
+AI: Ein Zombie ist ein Gegner in Minecraft, der nachts auftaucht und im Sonnenlicht brennt.
+
+User: Wozu dient __name__ == '__main__' in Python?
+AI: Python ist eine einfache Programmiersprache, die oft für KI und Skripte benutzt wird.
+
+User: Was bewirkt die Lernrate beim Training?
+AI: Trainingsdaten ab. ({error})")
+
+User: Was ist der Unterschied zwischen Array und ArrayList in Java?
+AI: `txt
+
+User: Was ist ein Transformer in einem Sprachmodell?
+AI: Ein Textdatei schreibt decodeLocation = new ArrayList</progress><p id="progress" max="100" value="0"></progress><p id="status" class="status">Bereit</p></section>
+
+User: Wozu dient ein Git-Branch?
+AI: Ein Tanzeln(worperplayer)` else {
+
+User: Was macht ein Redstone-Komparator?
+AI: Ein Redstone-Signal und kann einfache Schaltungen umkehren. Magst du es nochmal versuchen?
+
+User: Was bedeutet package-private in Java?
+AI: ````````` Protectinsation in HBeuttpund mit Pfeilen schießt.
+
+User: Was ist eine Halluzination bei einer AI?
+AI: Eine AI ist ein Programm, das aus Daten lernt, um Aufgaben wie Sprache zu verstehen.
+
+User: Was ist ein Type Hint in Python?
+AI: Ein Type Hint gibt den Typ einer Variablen an, ohne den Typ zu enforces.
+
+User: Wozu dient ein Scheduler in einem Minecraft-Plugin?
+AI: Ein Scheduler planen Aufgaben zur Ausführung.
+
+User: Was unterscheidet Overloading und Overriding in Java?
+AI: Overloading verändert nicht die Methode, Overriding ändert sie.
+
+User: Wo finde ich die Ursache eines Minecraft-Serverfehlers?
+AI: Im Serverlog.
+
+User: Wie fange ich eine bestimmte Ausnahme in Python ab?
+AI: Verwende `except Ausnahme:`.
+
+User: Was macht enumerate in einer Python-Schleife?
+AI: Gibt索引超出列表范围。请检查列表长度和索引值。{
+
+User: Was ist der Unterschied zwischen git merge und git rebase?
+AI: Merge kombiniert, rebase verschiebt Hist.
+
+User: Was ist ein Konstruktor in Java?
+AI: Ein Konstruktor initialisiert neue Objekte.
+
