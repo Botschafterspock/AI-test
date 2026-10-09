@@ -1,13 +1,13 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 chcp 65001 >nul
 cd /d "%~dp0"
 
 set "MVN_CMD=mvn"
 where mvn >nul 2>nul
 if errorlevel 1 (
-  for /f "delims=" %%M in ('dir /b /s "%USERPROFILE%\.m2\wrapper\dists\apache-maven-*\*\apache-maven-*\bin\mvn.cmd" 2^>nul') do set "MVN_CMD=%%M"
-  if "%MVN_CMD%"=="mvn" (
+  for /f "delims=" %%M in ('dir /b /s "%USERPROFILE%\.m2\wrapper\dists\mvn.cmd" 2^>nul') do set "MVN_CMD=%%M"
+  if "!MVN_CMD!"=="mvn" (
     echo Maven wurde nicht gefunden. Installiere Maven und pruefe, dass "mvn" im PATH liegt.
     echo Fuer JavaFX wird ausserdem JDK 17 oder neuer benoetigt.
     pause
