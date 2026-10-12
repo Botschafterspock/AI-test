@@ -20,7 +20,10 @@ Nur PyTorch als Rechenbibliothek.
    Der Smart-Server verwendet die Frage-Antwort-Paare aus `python/data/train.txt`;
    mit `/lerne Frage => Antwort` kannst du Wissen in `python/data/wissen.txt` ergänzen.
    `/reload` lädt die Dateien erneut. `/code Anfang` verwendet optional `model_all.pt`,
-   das mit `python/train_all.py` trainiert wird. Für den klassischen Modell-Chat bleibt
+   das mit `python/train_all.py` trainiert wird. Fragen ohne passende lokale Antwort
+   sucht der Server automatisch bei DuckDuckGo und zeigt bis zu drei Ergebnisse mit
+   Snippets und Quellen an. Diese Fragen werden dafür an DuckDuckGo übertragen;
+   dafür muss der Server Internetzugriff haben. Für den klassischen Modell-Chat bleibt
    `python/server_all.py` verfügbar.
 4. Client starten: in Eclipse Rechtsklick auf `ChatClient.java` > Run As > Java Application
    (oder im Terminal `mvn compile exec:java`)
@@ -33,9 +36,11 @@ Nur PyTorch als Rechenbibliothek.
 Eclipse-Import: File > Import > Maven > Existing Maven Projects.
 
 ## Wichtig: wie gut wird die AI?
-Die AI kennt nur das, was in `data/train.txt` steht. Die mitgelieferten Beispiele
-(ca. 35 Dialoge) reichen nur, damit der Ablauf funktioniert: Sie wird vor allem die
-Beispiele nachplappern und bei neuen Fragen oft Unsinn erzeugen.
+Das lokale Wissen der AI stammt aus `data/train.txt` und `data/wissen.txt`. Die
+mitgelieferten Beispiele (ca. 35 Dialoge) reichen nur, damit der Ablauf funktioniert:
+Sie wird lokale Beispiele wiedergeben und bei neuen Fragen auf Web-Suchergebnisse
+zurückgreifen. Das sind Treffer und Snippets, keine von einem großen Sprachmodell
+formulierte oder geprüfte Antwort.
 
 So wird sie besser:
 - Mehr Daten: tausende Dialoge im Format `User: ...` / `AI: ...` (Leerzeile zwischen Dialogen)

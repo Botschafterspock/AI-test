@@ -121,3 +121,7 @@
 2026-10-09 20:33:54 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
 2026-10-09 20:33:54 Datengenerator beendet (Exitcode 0).
 2026-10-09 20:33:54 Kontinuierliches Training startet (Seed 356040838, noch 336 Stunden; kein automatischer Plateau-Abbruch).
+2026-10-10 12:01:43 Starte automatischen Trainingslauf fÃ¼r 14 Tage.
+2026-10-10 12:01:43 Ollama erzeugt einmalig bis zu 20 Trainingsbeispiele und wird danach entladen; im Chat lÃ¤uft nur das eigene Modell.
+2026-10-10 12:01:43 Datengenerator beendet (Exitcode 0).
+2026-10-10 12:01:43 Kontinuierliches Training startet (Seed 433023, noch 336 Stunden; kein automatischer Plateau-Abbruch).

@@ -8,14 +8,19 @@ Zusätzliche Befehle:
   /lerne <Frage> => <Antwort>   speichert neues Wissen in data/wissen.txt
   /reload                       liest die Wissensdateien erneut ein
   /code <Anfang>                vervollständigt Code mit model_all.pt
+Unbekannte Fragen werden automatisch im Internet gesucht.
 """
 import difflib
+from html.parser import HTMLParser
 import math
 import os
 import random
 import re
 from collections import Counter
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from urllib.error import URLError
+from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
+from urllib.request import Request, urlopen
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
@@ -27,6 +32,9 @@ AI_NAME = "JOJO-AI"
 THRESHOLD = 0.40
 CODE_TEMPERATURE = 0.6
 MAX_CODE_BYTES = 1200
+WEB_SEARCH_URL = "https://lite.duckduckgo.com/lite/"
+WEB_SEARCH_TIMEOUT = 8
+MAX_SEARCH_RESPONSE_BYTES = 1_000_000
 
 STOP = {"was", "ist", "sind", "wie", "wer", "wo", "wann", "warum", "wieso", "du", "dein", "deine", "dir",
         "dich", "ich", "mir", "mich", "mein", "meine", "bist", "hast", "kannst", "kennst", "weißt", "weisst",
@@ -101,10 +109,10 @@ class Knowledge:
         norm = math.sqrt(sum(value * value for value in vector.values())) or 1.0
         return {gram: value / norm for gram, value in vector.items()}
 
-    def answer(self, text):
+    def known_answer(self, text):
         toks = tokens_of(text)
         if not toks:
-            return random.choice(GIBBERISH_A)
+            return None
         key = " ".join(toks)
         content = [token for token in toks if token not in STOP]
         vector = self._vector(key)
@@ -121,6 +129,13 @@ class Knowledge:
                     similar(token, known) for token in content for known in entry_content):
                 continue
             return random.choice(entry["answers"])
+        return None
+
+    def answer(self, text):
+        known_answer = self.known_answer(text)
+        if known_answer is not None:
+            return known_answer
+        toks = tokens_of(text)
         known = any(
             token in self.vocab
             or difflib.get_close_matches(token, self.vocab, n=1, cutoff=0.72)
@@ -132,6 +147,62 @@ class Knowledge:
 kb = Knowledge()
 
 
+class SearchResultsParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.results = []
+        self.capture = None
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        classes = attributes.get("class", "").split()
+        if tag == "a" and "result-link" in classes:
+            href = urljoin("https://duckduckgo.com", attributes.get("href", ""))
+            parsed = urlsplit(href)
+            result_url = href
+            if parsed.netloc in {"duckduckgo.com", "www.duckduckgo.com"} and parsed.path == "/l/":
+                result_url = parse_qs(parsed.query).get("uddg", [""])[0]
+            if urlsplit(result_url).scheme not in {"http", "https"}:
+                return
+            self.results.append({"title": "", "snippet": "", "url": result_url})
+            self.capture = "title"
+        elif tag == "td" and "result-snippet" in classes and self.results:
+            self.capture = "snippet"
+
+    def handle_endtag(self, tag):
+        if (self.capture == "title" and tag == "a") or (self.capture == "snippet" and tag == "td"):
+            self.capture = None
+
+    def handle_data(self, data):
+        if self.capture and self.results:
+            self.results[-1][self.capture] += data
+
+
+def search_web(query):
+    url = WEB_SEARCH_URL + "?" + urlencode({"q": query})
+    request = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html"})
+    with urlopen(request, timeout=WEB_SEARCH_TIMEOUT) as response:
+        html = response.read(MAX_SEARCH_RESPONSE_BYTES + 1)
+    if len(html) > MAX_SEARCH_RESPONSE_BYTES:
+        raise ValueError("Die Antwort der Suchmaschine ist zu groß.")
+
+    parser = SearchResultsParser()
+    parser.feed(html.decode("utf-8", errors="replace"))
+    results = parser.results[:3]
+    if not results:
+        return "Ich habe dazu nichts in meinem lokalen Wissen und keine Web-Ergebnisse gefunden."
+
+    lines = ["Ich habe dazu nichts in meinem lokalen Wissen gefunden. Diese Web-Ergebnisse könnten helfen:"]
+    for index, result in enumerate(results, 1):
+        title = " ".join(result["title"].split())
+        snippet = " ".join(result["snippet"].split())
+        lines.append(f"\n{index}. {title or result['url']}")
+        if snippet:
+            lines.append(snippet)
+        lines.append(f"Quelle: {result['url']}")
+    return "\n".join(lines)
+
+
 def reply(text):
     match = NAME_RE.match(text.strip())
     if match:
@@ -139,7 +210,14 @@ def reply(text):
         if match.group(1).lower() != "ich bin" or word[0].isupper():
             name = word[0].upper() + word[1:]
             return random.choice([f"Schön dich kennenzulernen, {name}!", f"Hallo {name}, freut mich!"])
-    return kb.answer(text)
+    answer = kb.known_answer(text)
+    if answer is not None:
+        return answer
+    try:
+        return search_web(text)
+    except (OSError, URLError, TimeoutError, ValueError) as error:
+        reason = error.reason if isinstance(error, URLError) else error
+        return f"Ich habe dazu nichts in meinem lokalen Wissen gefunden. Die Internetsuche ist fehlgeschlagen: {reason}"
 
 
 def learn(arg):
